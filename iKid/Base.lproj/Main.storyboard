@@ -1,26 +1,204 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Wbx-oC-3F8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Dad-->
+        <scene sceneID="vhN-EC-3Jr">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="1" id="zJ4-LI-bzX" customClass="FlipViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="tiT-K1-OJj"/>
+                        <viewControllerLayoutGuide type="bottom" id="KE7-L4-FMX"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" tag="2" contentMode="scaleToFill" id="IRd-t1-DBi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bki-ai-epP">
+                                <rect key="frame" x="0.0" y="574" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Next" id="q5x-qL-aCs">
+                                        <connections>
+                                            <action selector="switchView:" destination="zJ4-LI-bzX" id="j2e-xF-o3N"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Dad" image="humor" id="ORJ-dZ-gd1"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qvh-vr-4Kc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1364" y="116"/>
+        </scene>
+        <!--Knock-->
+        <scene sceneID="orv-xK-a9a">
+            <objects>
+                <viewController restorationIdentifier="2" id="85W-kj-XeG" customClass="FlipViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fMC-Iw-YjS"/>
+                        <viewControllerLayoutGuide type="bottom" id="QaH-di-gbR"/>
+                    </layoutGuides>
+                    <view key="view" tag="3" contentMode="scaleToFill" id="xe3-mA-VgX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TxB-el-s84">
+                                <rect key="frame" x="0.0" y="574" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Next" id="Obr-W1-jXB">
+                                        <connections>
+                                            <action selector="switchView:" destination="85W-kj-XeG" id="iOS-xv-2hF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Knock" image="door" id="7bc-mD-xI9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4dA-zF-s7q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1364" y="754"/>
+        </scene>
+        <!--Pun-->
+        <scene sceneID="CCh-xI-FtJ">
+            <objects>
+                <viewController restorationIdentifier="0" id="YuL-NQ-ZfK" customClass="FlipViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mOA-tC-ITU"/>
+                        <viewControllerLayoutGuide type="bottom" id="SC2-MF-yDX"/>
+                    </layoutGuides>
+                    <view key="view" tag="1" contentMode="scaleToFill" id="vLB-0f-hjp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b2o-v1-h1I">
+                                <rect key="frame" x="0.0" y="574" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Next" id="cwf-qs-Ze8">
+                                        <connections>
+                                            <action selector="switchView:" destination="YuL-NQ-ZfK" id="05Z-Ws-kni"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pun" image="laughing" id="Ctb-to-b1l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7NQ-FA-k4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1364" y="-519"/>
+        </scene>
+        <!--Flipped View Controller-->
+        <scene sceneID="kJg-oy-QXY">
+            <objects>
+                <viewController storyboardIdentifier="Joke" id="E92-4B-6lo" customClass="FlippedViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Ms-EE-N9t"/>
+                        <viewControllerLayoutGuide type="bottom" id="YwW-Z2-SdX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Liz-BG-Hxk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joke" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixq-cy-hME">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ixq-cy-hME" firstAttribute="leading" secondItem="Liz-BG-Hxk" secondAttribute="leadingMargin" id="4pf-ld-ym1"/>
+                            <constraint firstItem="ixq-cy-hME" firstAttribute="top" secondItem="6Ms-EE-N9t" secondAttribute="bottom" id="FVU-sw-xcg"/>
+                            <constraint firstItem="YwW-Z2-SdX" firstAttribute="top" secondItem="ixq-cy-hME" secondAttribute="bottom" id="hQs-2s-flJ"/>
+                            <constraint firstItem="ixq-cy-hME" firstAttribute="trailing" secondItem="Liz-BG-Hxk" secondAttribute="trailingMargin" id="v4y-QO-KYA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textLabel" destination="ixq-cy-hME" id="8Is-tf-7os"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qvS-7j-xdm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2613.5999999999999" y="-291.00449775112446"/>
+        </scene>
+        <!--Flipped View Controller-->
+        <scene sceneID="IvI-AW-jJg">
+            <objects>
+                <viewController storyboardIdentifier="Punchline" id="cti-iy-m7R" customClass="FlippedViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vDu-vt-rRY"/>
+                        <viewControllerLayoutGuide type="bottom" id="7yq-TN-Umw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rDO-Bx-RgA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Punchline" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNN-kQ-lpa">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WNN-kQ-lpa" firstAttribute="trailing" secondItem="rDO-Bx-RgA" secondAttribute="trailingMargin" id="2Cm-0i-HXj"/>
+                            <constraint firstItem="WNN-kQ-lpa" firstAttribute="leading" secondItem="rDO-Bx-RgA" secondAttribute="leadingMargin" id="5QB-Qg-EiA"/>
+                            <constraint firstItem="WNN-kQ-lpa" firstAttribute="top" secondItem="vDu-vt-rRY" secondAttribute="bottom" id="Q9W-wh-xW8"/>
+                            <constraint firstItem="7yq-TN-Umw" firstAttribute="top" secondItem="WNN-kQ-lpa" secondAttribute="bottom" id="eP5-7U-FOY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textLabel" destination="WNN-kQ-lpa" id="fhq-j7-1Qt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A4T-st-epR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2613.5999999999999" y="389.95502248875567"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="07N-X7-iaC">
+            <objects>
+                <tabBarController id="Wbx-oC-3F8" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="MY2-MD-wP1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="YuL-NQ-ZfK" kind="relationship" relationship="viewControllers" id="U49-a1-JD0"/>
+                        <segue destination="zJ4-LI-bzX" kind="relationship" relationship="viewControllers" id="Pzb-H5-47q"/>
+                        <segue destination="85W-kj-XeG" kind="relationship" relationship="viewControllers" id="TMP-pr-0BP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPZ-E6-YH1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="415" y="116"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="door" width="30" height="30"/>
+        <image name="humor" width="30" height="30"/>
+        <image name="laughing" width="30" height="30"/>
+    </resources>
 </document>

@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1107749F1EB16CA1002309F1 /* JokeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107749E1EB16CA1002309F1 /* JokeController.swift */; };
 		114DDF691EB12C7700BEBDA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114DDF681EB12C7700BEBDA7 /* AppDelegate.swift */; };
-		114DDF6B1EB12C7700BEBDA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114DDF6A1EB12C7700BEBDA7 /* ViewController.swift */; };
 		114DDF6E1EB12C7700BEBDA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114DDF6C1EB12C7700BEBDA7 /* Main.storyboard */; };
 		114DDF701EB12C7700BEBDA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114DDF6F1EB12C7700BEBDA7 /* Assets.xcassets */; };
 		114DDF731EB12C7700BEBDA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114DDF711EB12C7700BEBDA7 /* LaunchScreen.storyboard */; };
+		114DDF7B1EB1357500BEBDA7 /* FlipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114DDF7A1EB1357500BEBDA7 /* FlipViewController.swift */; };
+		114DDF7D1EB139DF00BEBDA7 /* FlippedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114DDF7C1EB139DF00BEBDA7 /* FlippedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1107749E1EB16CA1002309F1 /* JokeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeController.swift; sourceTree = "<group>"; };
 		114DDF651EB12C7700BEBDA7 /* iKid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iKid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		114DDF681EB12C7700BEBDA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		114DDF6A1EB12C7700BEBDA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		114DDF6D1EB12C7700BEBDA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		114DDF6F1EB12C7700BEBDA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		114DDF721EB12C7700BEBDA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		114DDF741EB12C7700BEBDA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		114DDF7A1EB1357500BEBDA7 /* FlipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipViewController.swift; sourceTree = "<group>"; };
+		114DDF7C1EB139DF00BEBDA7 /* FlippedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlippedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				114DDF681EB12C7700BEBDA7 /* AppDelegate.swift */,
-				114DDF6A1EB12C7700BEBDA7 /* ViewController.swift */,
 				114DDF6C1EB12C7700BEBDA7 /* Main.storyboard */,
 				114DDF6F1EB12C7700BEBDA7 /* Assets.xcassets */,
 				114DDF711EB12C7700BEBDA7 /* LaunchScreen.storyboard */,
 				114DDF741EB12C7700BEBDA7 /* Info.plist */,
+				114DDF7A1EB1357500BEBDA7 /* FlipViewController.swift */,
+				114DDF7C1EB139DF00BEBDA7 /* FlippedViewController.swift */,
+				1107749E1EB16CA1002309F1 /* JokeController.swift */,
 			);
 			path = iKid;
 			sourceTree = "<group>";
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				114DDF6B1EB12C7700BEBDA7 /* ViewController.swift in Sources */,
+				1107749F1EB16CA1002309F1 /* JokeController.swift in Sources */,
+				114DDF7B1EB1357500BEBDA7 /* FlipViewController.swift in Sources */,
+				114DDF7D1EB139DF00BEBDA7 /* FlippedViewController.swift in Sources */,
 				114DDF691EB12C7700BEBDA7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +309,7 @@
 				114DDF791EB12C7700BEBDA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
